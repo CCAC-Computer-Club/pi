@@ -2,34 +2,38 @@ const playerName = sessionStorage.getItem("playerName") || "Wildcat";
 
 let questions = [
 	{
-		prompt: "What is the capital of France?",
-		options: ["Berlin", "Madrid", "Paris", "Rome"],
-		answer: "Paris",
+		prompt: "who was the first person to approximate pi to 35 decimal places?",
+		options: ["ludolph van ceulen", "liu hui", "Bhaskara the 2nd", "jamshid al kashi"],
+		answer: "ludolph van ceulen",
 	},
 	{
-		prompt: "Which planet is known as the Red Planet?",
-		options: ["Earth", "Mars", "Jupiter", "Saturn"],
-		answer: "Mars",
-	},
-	{
-		prompt: "What is the largest ocean on Earth?",
+		prompt: "How did ludolph van ceulen approximate pi to 35 decimal places?",
 		options: [
-			"Atlantic Ocean",
-			"Indian Ocean",
-			"Arctic Ocean",
-			"Pacific Ocean",
+			"he inscribed a 2^62 sided polygon into a circle", 
+			"he used a taylor/maclaurin expansion", 
+			"he inscribed a 348 sided polygon into a circle", 
+			"he applied simpsons rule to approximate an integral that converges to pi"
 		],
-		answer: "Pacific Ocean",
+		answer: "he inscribed a 2^62 sided polygon into a circle",
 	},
 	{
-		prompt: "Who wrote 'To Kill a Mockingbird'?",
+		prompt: "what's the definition of pi?",
 		options: [
-			"Harper Lee",
-			"Mark Twain",
-			"Ernest Hemingway",
-			"F. Scott Fitzgerald",
+			"circumference divided by diameter",
+			"diameter divided by circumference",
+			"pi is pi",
 		],
-		answer: "Harper Lee",
+		answer: "circumference divided by diameter"
+	},
+	{
+		prompt: "what computational method is used for record breaking pi approximations?",
+		options: [
+			"Chudnovsky's algorithm",
+			"monte carlo estimations",
+			"machin formula",
+			"gauss-legendre algorithm",
+		],
+		answer: "Chudnovsky's algorithm",
 	},
 	{
 		prompt: "What is the name of the mathematician who first rigorously proved that π is irrational?",
