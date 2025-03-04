@@ -2,6 +2,40 @@ const playerName = sessionStorage.getItem("playerName") || "Wildcat";
 
 let questions = [
 	{
+		prompt: "who was the first person to approximate pi to 35 decimal places?",
+		options: ["ludolph van ceulen", "liu hui", "Bhaskara the 2nd", "jamshid al kashi"],
+		answer: "ludolph van ceulen",
+	},
+	{
+		prompt: "How did ludolph van ceulen approximate pi to 35 decimal places?",
+		options: [
+			"he inscribed a 2^62 sided polygon into a circle", 
+			"he used a taylor/maclaurin expansion", 
+			"he inscribed a 348 sided polygon into a circle", 
+			"he applied simpsons rule to approximate an integral that converges to pi"
+		],
+		answer: "he inscribed a 2^62 sided polygon into a circle",
+	},
+	{
+		prompt: "what's the definition of pi?",
+		options: [
+			"circumference divided by diameter",
+			"diameter divided by circumference",
+			"pi is pi",
+		],
+		answer: "circumference divided by diameter"
+	},
+	{
+		prompt: "what computational method is used for record breaking pi approximations?",
+		options: [
+			"Chudnovsky's algorithm",
+			"monte carlo estimations",
+			"machin formula",
+			"gauss-legendre algorithm",
+		],
+		answer: "Chudnovsky's algorithm",
+  },
+  {
 		prompt: "What year was Pi Day first celebrated?",
 		options: ["1956", "1988", "1975", "1995"],
 		answer: "1988",
@@ -21,13 +55,11 @@ let questions = [
 		options: ["Euclid", "Pythagoras", "Johann Lambert", "Isaac Newton"],
 		answer: "Johann Lambert",
 	},
-
 	{
 		prompt: "What is the mathematical symbol for pi?",
 		options: ["𝝿", "𝞥", "𝞓", "𝚺"],
 		answer: "𝝿",
 	},
-		
 ];
 
 Array.prototype.shuffle = function () {
