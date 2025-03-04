@@ -34,11 +34,31 @@ let questions = [
 			"gauss-legendre algorithm",
 		],
 		answer: "Chudnovsky's algorithm",
+  },
+  {
+		prompt: "What year was Pi Day first celebrated?",
+		options: ["1956", "1988", "1975", "1995"],
+		answer: "1988",
 	},
 	{
+		prompt: "Which famous scientist's birthday coincides with Pi Day?",
+		options: ["Archimedes", "Charels Darwin", "Albert Einstein", "Isaac Newton"],
+		answer: "Albert Einstein",
+	},
+	{
+		prompt: "What is the shape most commonly associated with Pi",
+		options: ["Circle", "Square", "Triangle", "Oval"],
+    answer: "Circle",
+  },
+  {
 		prompt: "What is the name of the mathematician who first rigorously proved that π is irrational?",
 		options: ["Euclid", "Pythagoras", "Johann Lambert", "Isaac Newton"],
 		answer: "Johann Lambert",
+	},
+	{
+		prompt: "What is the mathematical symbol for pi?",
+		options: ["𝝿", "𝞥", "𝞓", "𝚺"],
+		answer: "𝝿",
 	},
 ];
 
