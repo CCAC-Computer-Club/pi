@@ -2,55 +2,66 @@ const playerName = sessionStorage.getItem("playerName") || "Wildcat";
 
 let questions = [
 	{
-		prompt: "who was the first person to approximate pi to 35 decimal places?",
-		options: ["ludolph van ceulen", "liu hui", "Bhaskara the 2nd", "jamshid al kashi"],
-		answer: "ludolph van ceulen",
-	},
-	{
-		prompt: "How did ludolph van ceulen approximate pi to 35 decimal places?",
+		prompt: "Who was the first person to approximate pi to 35 decimal places?",
 		options: [
-			"he inscribed a 2^62 sided polygon into a circle", 
-			"he used a taylor/maclaurin expansion", 
-			"he inscribed a 348 sided polygon into a circle", 
-			"he applied simpsons rule to approximate an integral that converges to pi"
+			"Ludolph van Ceulen",
+			"Liu Hui",
+			"Bhaskara II",
+			"Jamshid al-Kashi",
 		],
-		answer: "he inscribed a 2^62 sided polygon into a circle",
+		answer: "Ludolph van Ceulen",
 	},
 	{
-		prompt: "what's the definition of pi?",
+		prompt: "How did Ludolph van Ceulen approximate pi to 35 decimal places?",
 		options: [
-			"circumference divided by diameter",
-			"diameter divided by circumference",
-			"pi is pi",
+			"He inscribed a 2^62-sided polygon into a circle",
+			"He used a Taylor/Maclaurin expansion",
+			"He inscribed a 348-sided polygon into a circle",
+			"He applied Simpson's Rule to approximate an integral that converges to pi",
 		],
-		answer: "circumference divided by diameter"
+		answer: "He inscribed a 2^62-sided polygon into a circle",
 	},
 	{
-		prompt: "what computational method is used for record breaking pi approximations?",
+		prompt: "What is the definition of pi?",
+		options: [
+			"Circumference divided by diameter",
+			"Diameter divided by circumference",
+			"Diameter divided by circumference squared",
+			"Pi is pi",
+		],
+		answer: "Circumference divided by diameter",
+	},
+	{
+		prompt: "What computational method is used for record-breaking pi approximations?",
 		options: [
 			"Chudnovsky's algorithm",
-			"monte carlo estimations",
-			"machin formula",
-			"gauss-legendre algorithm",
+			"Monte Carlo estimations",
+			"Machin's formula",
+			"Gauss-Legendre algorithm",
 		],
 		answer: "Chudnovsky's algorithm",
-  },
-  {
+	},
+	{
 		prompt: "What year was Pi Day first celebrated?",
 		options: ["1956", "1988", "1975", "1995"],
 		answer: "1988",
 	},
 	{
 		prompt: "Which famous scientist's birthday coincides with Pi Day?",
-		options: ["Archimedes", "Charels Darwin", "Albert Einstein", "Isaac Newton"],
+		options: [
+			"Archimedes",
+			"Charles Darwin",
+			"Albert Einstein",
+			"Isaac Newton",
+		],
 		answer: "Albert Einstein",
 	},
 	{
-		prompt: "What is the shape most commonly associated with Pi",
+		prompt: "What is the shape most commonly associated with pi?",
 		options: ["Circle", "Square", "Triangle", "Oval"],
-    answer: "Circle",
-  },
-  {
+		answer: "Circle",
+	},
+	{
 		prompt: "What is the name of the mathematician who first rigorously proved that π is irrational?",
 		options: ["Euclid", "Pythagoras", "Johann Lambert", "Isaac Newton"],
 		answer: "Johann Lambert",
