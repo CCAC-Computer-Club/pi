@@ -6,34 +6,65 @@ body {
     justify-content: center;
     margin: 0;
     height: 100vh;
+    color: white;
     font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #117BA5 0%, #781F58 60%, #9B1C38 100%);
+    text-align: center;
 }
 
 /* Responsive Typography */
 h1 {
-    font-size: clamp(2rem, 5vw, 4em); /* Scales dynamically */
-    text-align: center;
+    font-size: clamp(3rem, 6vw, 6rem);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 5px; /* Closer to h2 */
+}
+
+h2 {
+    font-size: clamp(2rem, 4.5vw, 4rem);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: -15px; /* Reduce gap from h1 */
+    line-height: 1.2; /* Tighter line spacing */
+}
+
+#game-header {
+    padding: 10px; /* Reduce overall spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* Keeps elements close together */
+}
+
+#prompt {
+    padding: 20px;
+    margin: 20px;
 }
 
 p {
-    font-size: clamp(1.5rem, 3vw, 3em);
-    text-align: center;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    margin-bottom: 5px;
+    font-family: 'Anonymous Pro', monospace;
 }
 
 input {
-    font-size: clamp(1.5rem, 3vw, 2.5em);
-    padding: 10px;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    padding: 6px;
+    font-family: 'Anonymous Pro', monospace;
 }
 
 /* Buttons */
 button {
     background-color: white;
-    font-size: clamp(1.5rem, 3vw, 2.5em);
-    padding: 10px 20px;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+    padding: 6px 14px;
     border: 2px solid #ccc;
     border-radius: 10px;
     cursor: pointer;
     transition: 0.3s ease;
+    font-family: 'Anonymous Pro', monospace;
 }
 
 button:hover {
@@ -42,78 +73,67 @@ button:hover {
 
 /* Panels */
 #scorePane {
-    /* background-color: rgb(255, 97, 97); */
     width: 100vw;
-    height: 10vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: clamp(1.5rem, 3vw, 2em);
+    font-size: clamp(1rem, 2vw, 1.5rem);
     flex-direction: column;
-    line-height: 0px;
-    padding: 10px;
+    padding: 6px;
 }
 
 #infoPane {
-    /* background-color: rgb(255, 184, 102); */
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    height: 20vh;
-    padding: 10px;
+    height: auto;
+    padding: 6px;
 }
 
 /* Button Pane Adjustments */
 #buttonPane {
     width: 100%;
-    height: 50vh;
-    margin: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
-    padding: 10px;
-    gap: 16px;
+    padding: 8px;
+    gap: 10px;
 }
 
 #buttonPane button {
-    width: 45%; /* Better for desktop layout */
-    height: auto;
-    font-size: clamp(1.5rem, 3vw, 2em);
+    width: 40%;
+    font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 /* Submit Button */
 #submitPane {
     width: 100%;
-    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 10px;
 }
 
 #submitPane button {
-    width: 40%;
-    height: 5vh;
-    font-size: clamp(1.5rem, 3vw, 2em);
-    border-radius: 10px;
+    width: 35%;
+    height: auto;
+    font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 /* Responsive Layout for Larger Screens */
 @media (min-width: 1024px) {
     #buttonPane {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
     }
 
     #buttonPane button {
-        width: 30%;
-        height: 15%;
+        width: 25%;
     }
 
     #submitPane button {
-        width: 30%;
+        width: 25%;
     }
 }
