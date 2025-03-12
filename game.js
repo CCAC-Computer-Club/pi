@@ -26,6 +26,7 @@ let questions = [
 		options: [
 			"Circumference divided by diameter",
 			"Diameter divided by circumference",
+			"Diameter divided by circumference squared",
 			"Pi is pi",
 		],
 		answer: "Circumference divided by diameter",

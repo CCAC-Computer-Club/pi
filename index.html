@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <head>
+    <meta charset="UTF-8">
     <title>Pi Day Trivia Challenge</title>
+
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Pi Day Activity</h1>
-    <p>Enter your name: </p>
+
+    <img src="img/pi.svg" alt="Pi Symbol" width="200" height="200">
+    <div id="game-header">
+        <h1>PI DAY</h1>
+        <h2>TRIVIA<br>CHALLENGE</h2>
+    </div>
+    <p>answer 3 questions correctly to win.</p>
+    <p>if you get a question wrong, you get one more attempt.</p>
+    <p>get it wrong again and you lose. good luck!</p>
+    <br>
+    <p>Enter your name: </p><br>
     <form id="nameForm">
         <input type="text" id="playerName" placeholder="Your Name">
         <button type="submit">Submit</button>
     </form>
 
     <script src="index.js" defer></script>
+
 </body>
