@@ -26,7 +26,6 @@ let questions = [
 		options: [
 			"Circumference divided by diameter",
 			"Diameter divided by circumference",
-			"Diameter divided by circumference squared",
 			"Pi is pi",
 		],
 		answer: "Circumference divided by diameter",
@@ -70,6 +69,81 @@ let questions = [
 		prompt: "What is the mathematical symbol for pi?",
 		options: ["𝝿", "𝞥", "𝞓", "𝚺"],
 		answer: "𝝿",
+	},
+	{
+		prompt: "Which ancient Greek mathematician first estimated pi using inscribed and circumscribed polygons?",
+		options: ["Euclid", "Archimedes", "Ptolemy", "Hippocrates"],
+		answer: "Archimedes",
+	},
+	{
+		prompt: "What is the continued fraction representation of pi used for approximations?",
+		options: [
+			"3 + 1/(7 + 1/(15 + 1/(1 + 1/292)))",
+			"3 + 1/(5 + 1/(12 + 1/(4 + 1/9)))",
+			"3 + 1/(6 + 1/(10 + 1/(3 + 1/8)))",
+			"3 + 1/(4 + 1/(11 + 1/(6 + 1/20)))",
+		],
+		answer: "3 + 1/(7 + 1/(15 + 1/(1 + 1/292)))",
+	},
+	{
+		prompt: "What famous formula expresses pi in terms of an infinite product involving prime numbers?",
+		options: [
+			"Euler's product formula",
+			"Wallis product formula",
+			"Machin's formula",
+			"Ramanujan’s pi formula",
+		],
+		answer: "Wallis product formula",
+	},
+	{
+		prompt: "What famous identity links pi, e, i, 1, and 0?",
+		options: [
+			"Euler's identity",
+			"Taylor's theorem",
+			"Fourier's equation",
+			"Newton’s formula",
+		],
+		answer: "Euler's identity",
+	},
+	{
+		prompt: "What is the approximate value of pi to 10 decimal places?",
+		options: [
+			"3.1415926535",
+			"3.1415926543",
+			"3.1415926538",
+			"3.1415926527",
+		],
+		answer: "3.1415926535",
+	},
+	{
+		prompt: "Which famous mathematician developed an infinite series for calculating pi that begins with π/4 = 1 - 1/3 + 1/5 - 1/7 + ...?",
+		options: ["Leibniz", "Newton", "Gauss", "Euler"],
+		answer: "Leibniz",
+	},
+	{
+		prompt: "Which irrational number is closely related to pi and appears in trigonometric integrals?",
+		options: [
+			"Euler's number (e)",
+			"The golden ratio (φ)",
+			"The square root of 2",
+			"The Feigenbaum constant",
+		],
+		answer: "Euler's number (e)",
+	},
+	{
+		prompt: "What is the term for an algorithm that rapidly converges to pi using arithmetic and geometric means?",
+		options: [
+			"Gauss-Legendre algorithm",
+			"Newton-Raphson method",
+			"Euler-Maclaurin formula",
+			"Monte Carlo estimation",
+		],
+		answer: "Gauss-Legendre algorithm",
+	},
+	{
+		prompt: "Which ancient civilization first recorded a rough approximation of pi as 3.125?",
+		options: ["Babylonians", "Egyptians", "Greeks", "Chinese"],
+		answer: "Babylonians",
 	},
 ];
 
