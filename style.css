@@ -71,6 +71,11 @@ button:hover {
     background-color: #ddd;
 }
 
+input, button {
+    font-size: clamp(1.2rem, 3vw, 2.2rem); /* Increased from previous values */
+    padding: 10px 16px; /* Slightly more padding for better readability */
+}
+
 /* Panels */
 #scorePane {
     width: 100vw;
