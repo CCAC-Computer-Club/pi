@@ -228,16 +228,15 @@ function updateScoreInfo() {
 }
 
 const resetButtons = () => {
-	for (let i = 0; i < 4; i++) {
-		document.getElementById(`button${i + 1}`).style.backgroundColor = "";
-	}
+	document
+		.querySelectorAll("button")
+		.forEach((btn) => btn.classList.remove("selected"));
 };
 
 const changeSelected = (index) => {
 	resetButtons();
 	selected = index;
-	document.getElementById(`button${selected + 1}`).style.backgroundColor =
-		"#ccc";
+	document.getElementById(`button${selected + 1}`).classList.add("selected");
 };
 
 button1.addEventListener("click", () => changeSelected(0));

@@ -1,14 +1,36 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>computer club pi project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over</title>
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
-    <h1>game over</h1>
-    <p id="msg"></p>
+    <div class="game-over-container">
+        <h1>Game Over</h1>
+        <h2 id="message"></h2>
+        <div id="badge"></div>
+    </div>
 
+    <script>
+        let playerName = sessionStorage.getItem("playerName") || "Player";
+        let winStatus = sessionStorage.getItem("win");
 
-    <script src="gameover.js" defer></script>
+        document.getElementById("message").innerHTML = 
+            winStatus === "1" ? `Let's go, ${playerName}! I think you deserve a slice of pie 🥧` : 
+            `Tough break, ${playerName}. Better luck next time! 😖`;
+
+        if (winStatus === "1") {
+            document.getElementById("badge").innerHTML = `
+                <img src="img/badge.svg" alt="Pie Badge" width="200" height="200">
+            `;
+        }
+    </script>
 </body>
+</html>
